@@ -4,8 +4,12 @@
   "devDependencies": {
     "lerna": "^4.0.0"
   },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "bootstrap": "npm install; lerna bootstrap;",
+    "bootstrap": "yarn install; lerna bootstrap;",
     "start": "lerna run start --parallel",
     "start:shop-web": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope shop-web --stream dev",
     "build:shop-web": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope shop-web --stream build",

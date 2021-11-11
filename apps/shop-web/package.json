@@ -1,6 +1,7 @@
 {
   "name": "shop-web",
   "private": true,
+  "version": "0.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -8,9 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tundra/core": "0.0.0",
+    "@tundra/shared": "0.0.0",
+    "@types/react": "^17.0.34",
+    "dotenv": "^10.0.0",
     "next": "12.0.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.8.2",
+    "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "typescript": "^4.4.4"
   },
   "devDependencies": {
     "eslint": "7.32.0",
