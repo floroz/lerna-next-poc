@@ -1,12 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-// import styles from "../styles/Home.module.css";
-import { Button } from "@tundra/shared";
+import {
+  PrimaryButton,
+  SecondaryButton,
+  BootstrapButton,
+} from "@tundra/shared";
 
 export default function Home() {
   return (
     <div>
-      <Button>Hello World</Button>
+      <PrimaryButton>Global SCSS</PrimaryButton>
+      <SecondaryButton>SCSS Module</SecondaryButton>
+      <BootstrapButton>Bootstrap Global</BootstrapButton>
     </div>
   );
 }
