@@ -6,13 +6,13 @@
   },
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "feLibs/*"
   ],
   "scripts": {
     "bootstrap": "yarn install; lerna bootstrap;",
     "start": "lerna run start --parallel",
-    "start:shop-web": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope shop-web --stream dev",
-    "build:shop-web": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope shop-web --stream build",
-    "run:build:shop-web": "lerna run start --scope shop-web"
+    "next:dev": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope shop-web --stream dev",
+    "next:build": "node -r ./dotenv.config.js node_modules/.bin/lerna run --scope shop-web --stream build",
+    "next:serve": "lerna run start --scope shop-web"
   }
 }
